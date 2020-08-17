@@ -209,3 +209,58 @@ describe('add', function() {
     })
 });
 
+describe('returnNumberSail', function () {
+    it('returnNumberSail should be defined', function() {
+        expect(typeof returnNumberSail).toBe('function');
+    });
+    it('returnNumberSail should return a number when passed a string', function() {
+        expect(typeof returnNumberSail()).toBe('string')
+    })
+    it('returnNumberSail should return a countdown by 5 from 100 to 5 inclusive.', function() {
+        expect(returnNumberSail()).toBe(
+            "1\n" +
+            "22\n" +
+            "333\n" +
+            "4444\n" +
+            "55555\n" +
+            "666666\n" +
+            "7777777\n" +
+            "88888888\n" +
+            "999999999")
+    })
+});
+
+describe('returnCountDownFrom100InFives', function () {
+    it('returnCountDownFrom100InFives should be defined', function() {
+        expect(typeof returnCountDownFrom100InFives).toBe('function');
+    });
+    it('returnCountDownFrom100InFives() should return a number when passed a number', function() {
+        expect(typeof returnCountDownFrom100InFives()).toBe('string')
+    })
+    it('returnCountDownFrom100InFives() should return a number one greater than the input', function() {
+        expect(returnCountDownFrom100InFives()).toBe(
+            '100\n' +
+            '95\n' +
+            '90\n' +
+            '85\n' +
+            '80\n' +
+            '75\n' +
+            '70\n' +
+            '65\n' +
+            '60\n' +
+            '55\n' +
+            '50\n' +
+            '45\n' +
+            '40\n' +
+            '35\n' +
+            '30\n' +
+            '25\n' +
+            '20\n' +
+            '15\n' +
+            '10\n' +
+            '5')
+    })
+})
+
+
+
