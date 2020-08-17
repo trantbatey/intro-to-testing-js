@@ -33,25 +33,3 @@ function add(n1, n2) {
     if(isNaN(n2)) return 0
     return n1 + n2
 }
-
-// returnNumberSail function
-function returnNumberSail() {
-    let output = '';
-    for (let i = 1; i < 10; i++) {
-        for (let j = 1; j <= i; j++) {
-            output += i
-        }
-        if (i < 9) output += '\n'
-    }
-    return output
-}
-
-// returnCountDownFrom100InFives function
-function returnCountDownFrom100InFives() {
-    let output = '';
-    for (let i = 100; i > 0; i -= 5) {
-        output += i
-        if (i != 5) output += '\n'
-    }
-    return output
-}
